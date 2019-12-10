@@ -1,0 +1,32 @@
+
+
+{% extends 'base.html' %}
+
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Prosper-Ro</title>
+{% endblock %}
+
+{% block navbaricons %}
+<div class="btn-group btn-group-primary d-inline-flex justify-content-end" data-toggle="buttons">
+  <label class="btn btn-primary active">
+     <img type="btn btn-lg px-2 btn-primary" name="options" role="button" id="kw" autocomplete="off" src="../static/images/kw.png" height="30" alt="" data-toggle="tooltip" data-placement="top" title="Kreislaufwirtschaft">
+  </label>
+  <label class="btn btn-primary">
+      <img type="btn btn-lg px-2 btn-primary" name="options" role="button" id="ww" autocomplete="off" src="../static/images/kw.png" height="30" alt="" data-toggle="tooltip" data-placement="top" title="Kreislaufwirtschaft">
+  </label>
+  <label class="btn btn-primary">
+      <img type="btn btn-lg px-2 btn-primary" name="options" role="button" id="planning" autocomplete="off" src="../static/images/kw.png" height="30" alt="" data-toggle="tooltip" data-placement="top" title="Kreislaufwirtschaft">
+ </label>
+</div>
+
+
+
+{% endblock %}
+
+{% block body %}
+    {% include "map_raw.html" %}
+{% endblock %}
+
+
